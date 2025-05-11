@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+html,
+body,
+#root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+:root {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #1a1a1a;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    font-weight: 500;
+    text-decoration: inherit;
+}
+
+h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+}
+
+/* VSCode highlight style */
+/* Overrides codemirrors default highlight styling */
+.cm-editor .cm-scroller ::selection {
+    background: rgba(38, 79, 120, 0.6) !important;
+}
+.cm-editor .cm-scroller ::-moz-selection {
+    background: rgba(38, 79, 120, 0.6) !important;
+}
+
+.cm-editor .cm-selectionLayer .cm-selectionBackground {
+    background-color: transparent !important;
+}
+
+.cm-editor.cm-focused .cm-cursor {
+    border-left-color: white !important;
+    border-left-width: 2px !important;
+}
+
+.cm-editor .cm-matchingBracket {
+    background-color: transparent !important;
+    outline: 1px solid #888888;
+    color: inherit !important;
+}
