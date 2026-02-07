@@ -1,0 +1,32 @@
+{
+  "name": "feedback-worker",
+  "main": "src/index.ts",
+  "workers_dev": true,
+  "compatibility_date": "2025-05-05",
+
+  /* Enable Node-style built-ins (Buffer, crypto, etc.) */
+  "compatibility_flags": ["nodejs_compat"],
+
+  /* ─────────────── KV namespaces ─────────────── */
+  "kv_namespaces": [
+    {
+      "binding": "FEEDBACK_KV",
+      "id": "3f150d56b46e4773935fb9f03c25f70e",
+      "preview_id": "00615c9c49644724a1aef01a216ab3c9"
+    },
+    {
+      "binding": "STATS_KV",
+      "id": "d81757c906264c3ab90c89261fec2045",
+      "preview_id": "5489831b51e145b0a51214faf7f501d1"
+    }
+  ],
+
+  /* ─────────────── R2 buckets ─────────────────── */
+  "r2_buckets": [
+    {
+      "binding": "FEEDBACK_R2",
+      "bucket_name": "feedback-images",          // production
+      "preview_bucket_name": "feedback-images-dev"
+    }
+  ]
+}

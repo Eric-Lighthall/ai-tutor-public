@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+
+html,
+body,
+#root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #171717;
+    color: #e5e5e5;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+:root {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color-scheme: dark;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+}
+
+a {
+    font-weight: 500;
+    text-decoration: inherit;
+}
+
+h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(38, 38, 38, 0.5);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #525252;
+    border-radius: 4px;
+    border: 1px solid transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    opacity: 0.8;
+}
+
+.problem-description-scroll::-webkit-scrollbar-thumb {
+    background-color: #525252;
+}
+
+.problem-description-scroll::-webkit-scrollbar-track {
+    background-color: rgba(38, 38, 38, 0.5);
+}
+
+/* CodeMirror overrides */
+.cm-editor .cm-scroller ::selection {
+    background: rgba(38, 79, 120, 0.6) !important;
+}
+
+.cm-editor .cm-selectionLayer .cm-selectionBackground {
+    background-color: transparent !important;
+}
+
+.cm-editor.cm-focused .cm-cursor {
+    border-left-color: white !important;
+    border-left-width: 2px !important;
+}
+
+.cm-editor .cm-matchingBracket {
+    background-color: transparent !important;
+    outline: 1px solid #888888;
+    color: inherit !important;
+}

@@ -1,0 +1,54 @@
+{
+    "moduleId": "hard",
+    "title": "Hard Problems",
+    "summary": "Master advanced algorithms and tackle challenging optimization problems.",
+    "difficulty": "hard",
+    "order": 3,
+    "problems": [
+        {
+            "id": "median-sorted-arrays",
+            "title": "Median of Two Sorted Arrays",
+            "description": "Given two sorted arrays, find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).",
+            "difficulty": "Hard",
+            "tags": ["Array", "Binary Search", "Divide and Conquer"],
+            "estimatedTime": "45 min",
+            "companies": ["Google", "Amazon", "Microsoft", "Apple"]
+        },
+        {
+            "id": "merge-k-sorted-lists",
+            "title": "Merge k Sorted Lists",
+            "description": "You are given an array of k linked-lists, each linked-list is sorted in ascending order. Merge all linked-lists into one sorted linked-list.",
+            "difficulty": "Hard",
+            "tags": ["Linked List", "Divide and Conquer", "Heap", "Merge Sort"],
+            "estimatedTime": "40 min",
+            "companies": ["Google", "Amazon", "Facebook", "Microsoft"]
+        },
+        {
+            "id": "trapping-rain-water",
+            "title": "Trapping Rain Water",
+            "description": "Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.",
+            "difficulty": "Hard",
+            "tags": ["Array", "Two Pointers", "Dynamic Programming", "Stack", "Monotonic Stack"],
+            "estimatedTime": "35 min",
+            "companies": ["Google", "Amazon", "Facebook"]
+        },
+        {
+            "id": "largest-rectangle-histogram",
+            "title": "Largest Rectangle in Histogram",
+            "description": "Given an array of integers representing the histogram's bar height where the width of each bar is 1, return the area of the largest rectangle.",
+            "difficulty": "Hard",
+            "tags": ["Array", "Stack", "Monotonic Stack"],
+            "estimatedTime": "40 min",
+            "companies": ["Google", "Amazon", "Microsoft"]
+        },
+        {
+            "id": "sliding-window-maximum",
+            "title": "Sliding Window Maximum",
+            "description": "You are given an array of integers and a sliding window of size k. Return the maximum element in each window.",
+            "difficulty": "Hard",
+            "tags": ["Array", "Queue", "Sliding Window", "Heap", "Monotonic Queue"],
+            "estimatedTime": "45 min",
+            "companies": ["Amazon", "Google", "Microsoft", "Facebook"]
+        }
+    ]
+} 

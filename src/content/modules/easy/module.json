@@ -1,0 +1,54 @@
+{
+    "moduleId": "easy",
+    "title": "Easy Problems",
+    "summary": "Perfect for beginners. Start with fundamental concepts and basic problem-solving patterns.",
+    "difficulty": "easy",
+    "order": 1,
+    "problems": [
+        {
+            "id": "two-sum",
+            "title": "Two Sum",
+            "description": "Given an array of integers and a target sum, return the indices of two numbers that add up to the target.",
+            "difficulty": "Easy",
+            "tags": ["Array", "Hash Table"],
+            "estimatedTime": "15 min",
+            "companies": ["Google", "Amazon", "Microsoft", "Facebook"]
+        },
+        {
+            "id": "valid-parentheses",
+            "title": "Valid Parentheses",
+            "description": "Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.",
+            "difficulty": "Easy",
+            "tags": ["String", "Stack"],
+            "estimatedTime": "20 min",
+            "companies": ["Google", "Amazon", "Facebook"]
+        },
+        {
+            "id": "merge-sorted-arrays",
+            "title": "Merge Two Sorted Lists",
+            "description": "You are given the heads of two sorted linked lists. Merge the two lists in a sorted manner.",
+            "difficulty": "Easy",
+            "tags": ["Linked List", "Recursion"],
+            "estimatedTime": "25 min",
+            "companies": ["Microsoft", "Apple", "Amazon"]
+        },
+        {
+            "id": "maximum-subarray",
+            "title": "Maximum Subarray",
+            "description": "Given an integer array, find the contiguous subarray with the largest sum, and return its sum.",
+            "difficulty": "Easy",
+            "tags": ["Array", "Dynamic Programming"],
+            "estimatedTime": "20 min",
+            "companies": ["Google", "Amazon", "LinkedIn"]
+        },
+        {
+            "id": "climbing-stairs",
+            "title": "Climbing Stairs",
+            "description": "You are climbing a staircase. It takes n steps to reach the top. Each time you can climb 1 or 2 steps.",
+            "difficulty": "Easy",
+            "tags": ["Dynamic Programming", "Math"],
+            "estimatedTime": "15 min",
+            "companies": ["Amazon", "Google", "Apple"]
+        }
+    ]
+} 

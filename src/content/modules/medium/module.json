@@ -1,0 +1,63 @@
+{
+    "moduleId": "medium",
+    "title": "Medium Problems",
+    "summary": "Build on your foundation with more complex algorithms and data structures.",
+    "difficulty": "medium",
+    "order": 2,
+    "problems": [
+        {
+            "id": "add-two-numbers",
+            "title": "Add Two Numbers",
+            "description": "You are given two non-empty linked lists representing two non-negative integers stored in reverse order.",
+            "difficulty": "Medium",
+            "tags": ["Linked List", "Math", "Recursion"],
+            "estimatedTime": "30 min",
+            "companies": ["Amazon", "Microsoft", "Google", "Apple"]
+        },
+        {
+            "id": "longest-substring",
+            "title": "Longest Substring Without Repeating Characters",
+            "description": "Given a string, find the length of the longest substring without repeating characters.",
+            "difficulty": "Medium",
+            "tags": ["Hash Table", "String", "Sliding Window"],
+            "estimatedTime": "35 min",
+            "companies": ["Amazon", "Google", "Facebook", "Microsoft"]
+        },
+        {
+            "id": "group-anagrams",
+            "title": "Group Anagrams",
+            "description": "Given an array of strings, group the anagrams together. You can return the answer in any order.",
+            "difficulty": "Medium",
+            "tags": ["Array", "Hash Table", "String", "Sorting"],
+            "estimatedTime": "25 min",
+            "companies": ["Amazon", "Facebook", "Google"]
+        },
+        {
+            "id": "top-k-frequent",
+            "title": "Top K Frequent Elements",
+            "description": "Given an integer array and an integer k, return the k most frequent elements.",
+            "difficulty": "Medium",
+            "tags": ["Array", "Hash Table", "Divide and Conquer", "Sorting", "Heap"],
+            "estimatedTime": "30 min",
+            "companies": ["Amazon", "Facebook", "Google", "Apple"]
+        },
+        {
+            "id": "product-except-self",
+            "title": "Product of Array Except Self",
+            "description": "Given an integer array, return an array where each element is the product of all elements except itself.",
+            "difficulty": "Medium",
+            "tags": ["Array", "Prefix Sum"],
+            "estimatedTime": "25 min",
+            "companies": ["Google", "Amazon", "Facebook", "Microsoft"]
+        },
+        {
+            "id": "valid-sudoku",
+            "title": "Valid Sudoku",
+            "description": "Determine if a 9x9 Sudoku board is valid. Only the filled cells need to be validated.",
+            "difficulty": "Medium",
+            "tags": ["Array", "Hash Table", "Matrix"],
+            "estimatedTime": "35 min",
+            "companies": ["Amazon", "Microsoft", "Apple"]
+        }
+    ]
+} 

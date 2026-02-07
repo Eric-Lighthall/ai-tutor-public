@@ -1,0 +1,202 @@
+{
+    "problemId": "two-sum",
+    "title": "Two Sum",
+    "difficulty": "Easy",
+    "descriptionPanel": {
+        "mainDescription": "Given an array of integers `nums` and an integer `target`, return **indices** of the two numbers such that they add up to `target`.\n\nYou may assume that each input would have **exactly one solution**, and you may not use the same element twice.\n\nYou can return the answer in any order.",
+        "constraints": [
+            "2 <= nums.length <= 104",
+            "-109 <= nums[i] <= 109",
+            "-109 <= target <= 109",
+            "**Only one valid answer exists.**"
+        ],
+        "examples": [
+            {
+                "title": "Example 1",
+                "input": "nums = [2,7,11,15], target = 9",
+                "output": "[0,1]",
+                "explanation": "Because `nums[0] + nums[1] == 9`, we return `[0,1]`."
+            },
+            {
+                "title": "Example 2",
+                "input": "nums = [3,2,4], target = 6",
+                "output": "[1,2]"
+            },
+            {
+                "title": "Example 3",
+                "input": "nums = [3,3], target = 6",
+                "output": "[0,1]"
+            }
+        ]
+    },
+    "testCases": [
+        {
+            "id": "1",
+            "input": ["nums = [3,2,4]", "target = 6"]
+        },
+        {
+            "id": "2",
+            "input": ["nums = [2,7,11,15]", "target = 9"]
+        },
+        {
+            "id": "3",
+            "input": ["nums = [3,2,3]", "target = 6"]
+        },
+        {
+            "id": "4",
+            "input": ["nums = [-3,4,3,90]", "target = 6"]
+        },
+        {
+            "hidden": "4"
+        }
+    ],
+    "steps": [
+        {
+            "id": "intro",
+            "title": "Problem Intro",
+            "contentType": "chat",
+            "content": {
+                "initialPrompt": "Let's start by reviewing what the problem is asking. Can you restate the Two Sum problem in your own words? What inputs do you get, and what should you return?"
+            }
+        },
+        {
+            "id": "interactiveTestCases",
+            "title": "Understand Inputs & Outputs",
+            "contentType": "interactiveTestCases",
+            "content": {
+                "instructionText": "Let's work through some examples to ensure you understand the goal: finding the *indices*.",
+                "functionSignature": [
+                    {
+                        "name": "nums",
+                        "type": "array<integer>",
+                        "label": "Input Array (nums)"
+                    },
+                    {
+                        "name": "target",
+                        "type": "integer",
+                        "label": "Target Value (target)"
+                    },
+                    {
+                        "name": "outputIndices",
+                        "type": "array<integer>",
+                        "label": "Output"
+                    }
+                ],
+                "challenges": [
+                    {
+                        "id": "c1_find_indices_1",
+                        "prompt": "Challenge 1: Based on the problem description, what should your function return for these inputs?",
+                        "givenParameters": {
+                            "nums": "[4, 11, 2, 15]",
+                            "target": 6
+                        },
+                        "parametersToProvide": [
+                            {
+                                "name": "outputIndices",
+                                "placeholder": "e.g., [0, 1]",
+                                "feedbackCorrect": "Correct! `nums[0]` + `nums[2]` equals the target `6`.",
+                                "feedbackIncorrect": "Not quite. Find the two indices whose elements sum to 6. Remember, the output should be the indices, not the numbers."
+                            }
+                        ],
+                        "expectedOutput": [0, 2]
+                    },
+                    {
+                        "id": "c2_find_indices_2",
+                        "prompt": "Challenge 2: What should the function return for these inputs?",
+                        "givenParameters": { "nums": "[3, 2, 4]", "target": 6 },
+                        "parametersToProvide": [
+                            {
+                                "name": "outputIndices",
+                                "placeholder": "e.g., [0, 1]",
+                                "feedbackCorrect": "Correct! `nums[1]` + `nums[2]` equals the target `6`.",
+                                "feedbackIncorrect": "Not quite. Find the two indices whose elements sum to 6. Remember the output format: `[index1, index2]`."
+                            }
+                        ],
+                        "expectedOutput": [1, 2]
+                    },
+                    {
+                        "id": "c3_find_indices_3",
+                        "prompt": "Challenge 3: Determine what should be returned for this case:",
+                        "givenParameters": { "nums": "[3, 3]", "target": 6 },
+                        "parametersToProvide": [
+                            {
+                                "name": "outputIndices",
+                                "placeholder": "e.g., [0, 1]",
+                                "feedbackCorrect": "Correct! `nums[0]` + `nums[1]` equals the target `6`.",
+                                "feedbackIncorrect": "Look closely at the indices. Even though the numbers are the same, their indices are different."
+                            }
+                        ],
+                        "expectedOutput": [0, 1]
+                    }
+                ],
+                "completionMessage": "Great job! You understand the relationship between the input array, the target, and the expected output indices."
+            }
+        },
+        {
+            "id": "deriveBruteForce",
+            "title": "Deriving a Simple Approach",
+            "contentType": "chat",
+            "content": {
+                "initialPrompt": "Okay, you understand the problem and the goal. Let's think about how to solve it.\n\nWhat's the most direct, maybe even 'obvious', way to check if *any* two numbers in the list add up to the target? Don't worry about efficiency yet, just how you'd guarantee you check all possibilities."
+            }
+        },
+        {
+            "id": "implementBruteForce",
+            "title": "Code: Brute Force",
+            "contentType": "interactiveCode",
+            "content": [
+                {
+                    "type": "codeBlock",
+                    "language": "python",
+                    "stepDescription": "Implement a brute-force, O(n^2) solution for the two-sum problem. Return the two *indices* that add up to the target. Docstrings are not required. It is assumed there's exactly one solution. Answer can be returned in any order.",
+                    "starterCode": {
+                        "python": "def two_sum_brute(nums, target):\n    # Implement brute force logic here\n    pass\n",
+                        "javascript": "let twoSumBrute = function(nums, target) {\n    // Implement brute force logic here\n    return [];\n};\n",
+                        "java": "import java.util.*;\n\nclass Solution {\n    public int[] twoSumBrute(int[] nums, int target) {\n        // Implement brute force logic here\n        return null;\n    }\n}",
+                        "cpp": "#include <vector>\n#include <stdexcept>\n\nclass Solution {\npublic:\n    std::vector<int> twoSumBrute(std::vector<int>& nums, int target) {\n        // Implement brute force logic here\n        return {};\n    }\n};",
+                        "csharp": "using System;\nusing System.Collections.Generic;\n\npublic class Solution {\n    public int[] TwoSumBrute(int[] nums, int target) {\n        // Implement brute force logic here\n       return Array.Empty<int>();\n    }\n}",
+                        "c": "#include <stdlib.h>\n\nint* twoSumBrute(int* nums, int numsSize, int target, int* returnSize) {\n    // Implement brute force logic here\n    *returnSize = 0;\n    return NULL; \n}"
+                    }
+                }
+            ],
+            "editorConfig": { "runnable": true }
+        },
+        {
+            "id": "deriveOptimized",
+            "title": "Deriving an Optimized Approach",
+            "contentType": "chat",
+            "content": {
+                "initialPrompt": "The brute-force approach works, but it checks every single pair. If the list is very long, that can be slow (O(n^2) time complexity).\n\nCan we do better? Imagine you're looking at a number `nums[i]`. What specific number do you *need* to find elsewhere in the array to reach the `target`? How could you quickly check if that needed number *exists* and find its index without looping through the rest of the array every time?"
+            }
+        },
+        {
+            "id": "implementOptimized",
+            "title": "Code: Optimized (Hash Map)",
+            "contentType": "interactiveCode",
+            "content": [
+                {
+                    "type": "codeBlock",
+                    "language": "python",
+                    "stepDescription": "Implement the optimized O(n) solution using a hash map for the two-sum problem. Iterate once, storing numbers and indices seen. For each number, check if its complement exists in the map. Return the two *indices* that add up to the target. Docstrings are not required. It is assumed there's exactly one solution. Answer can be returned in any order.",
+                    "starterCode": {
+                        "python": "def two_sum_optimized(nums, target):\n    # Implement optimized logic using a hash map here\n    pass\n",
+                        "javascript": "let twoSumOptimized = function(nums, target) {\n  // Implement optimized logic using a Map here\n};\n",
+                        "java": "import java.util.*;\n\nclass Solution {\n    public int[] twoSumOptimized(int[] nums, int target) {\n        // Implement optimized logic using a HashMap here\n        return null;\n    }\n}",
+                        "cpp": "#include <vector>\n#include <unordered_map>\n#include <stdexcept>\n\nclass Solution {\npublic:\n    std::vector<int> twoSumOptimized(std::vector<int>& nums, int target) {\n        // Implement optimized logic using an unordered_map here\n        return {};\n    }\n};",
+                        "csharp": "using System;\nusing System.Collections.Generic;\n\npublic class Solution {\n    public int[] TwoSumOptimized(int[] nums, int target) {\n        // Implement optimized logic using a Dictionary here\n        return Array.Empty<int>();\n    }\n}",
+                        "c": "#include <stdlib.h>\n\nint* twoSumOptimized(int* nums, int numsSize, int target, int* returnSize) {\n    // Implement optimized logic\n    *returnSize = 0;\n    return NULL;\n}"
+                    }
+                }
+            ],
+            "editorConfig": { "runnable": true }
+        },
+        {
+            "id": "conclusion",
+            "title": "Wrap Up",
+            "contentType": "chat",
+            "content": {
+                "initialPrompt": "Excellent work! You've implemented both a brute-force and an optimized solution for the Two Sum problem.\n\nWhat was the key difference in the logic between the two approaches? Why is the hash map version generally preferred in terms of time complexity?"
+            }
+        }
+    ]
+}
