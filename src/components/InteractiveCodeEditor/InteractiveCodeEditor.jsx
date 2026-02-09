@@ -205,12 +205,12 @@ export default function InteractiveCodeEditor({
                                 !showEditorIntroOverlay,
                             isRunning,
                             evaluationStatus,
-                            evaluationMessage: evaluationMessage || output,
+                            evaluationMessage,
                             approachFeedback,
                             isCorrectApproach,
                             handleRun,
                             runBtnLabel,
-                            output,
+
                             incorrectLines,
                             onDismissError: clearErrorState,
                             runningIndicatorAnimation:
